@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier , monospace;
+  background: conic-gradient(
+  	from 30deg, #FF0000 0%, #FFFF00 33.3%, #00FF00 33.4%, 
+  	#00FFFF 66.6%, #0000FF 66.7%, #FF00FF 100%, #FF0000 100%);
+  background-size: 100% 245%;
+}
+
+button{
+	cursor: pointer;
+}
+
