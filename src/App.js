@@ -74,7 +74,7 @@ loadUser = (data) => {
 
   onButtonSubmit = () =>{
     this.setState({imageUrl: this.state.input});
-    fetch('http://localhost:3000/imageURL', {
+    fetch('https://secret-citadel-57793.herokuapp.com/imageURL', {
           method: 'post',
           headers: {'Content-Type': 'application/json'},
           body: JSON.stringify({
@@ -84,7 +84,7 @@ loadUser = (data) => {
     .then(response => response.json())
     .then(response => { 
       if (response) {
-        fetch('http://localhost:3000/image', {
+        fetch('https://secret-citadel-57793.herokuapp.com/image', {
           method: 'put',
           headers: {'Content-Type': 'application/json'},
           body: JSON.stringify({
